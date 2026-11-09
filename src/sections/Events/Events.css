@@ -1,0 +1,364 @@
+/* =====================================
+   WEDDING EVENTS SECTION
+===================================== */
+
+.events-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: clamp(75px, 10vw, 125px) 0;
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(201, 164, 107, 0.12),
+      transparent 60%
+    ),
+    #f8f1e9;
+  text-align: center;
+}
+
+.events-shell {
+  width: min(100% - 40px, 1150px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* =====================================
+   SECTION HEADING
+===================================== */
+
+.events-section .section-heading-wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.events-section .section-kicker {
+  width: 100%;
+  text-align: center;
+  color: #947047;
+}
+
+.events-section .section-heading {
+  width: 100%;
+  color: #5b0b20;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(55px, 8vw, 90px);
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.events-section .section-copy {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px auto 0;
+  color: #79656a;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.events-section .gold-rule {
+  margin: 15px auto;
+}
+
+/* =====================================
+   EVENT GRID
+===================================== */
+.event-grid {
+  width: 100%;
+
+  display: grid;
+
+  /* Automatically centre even when there is only one event */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 360px));
+
+  justify-content: center;
+  justify-items: center;
+  align-items: stretch;
+
+  gap: 28px;
+  margin: 60px auto 0;
+}
+
+/* =====================================
+   EVENT CARD
+===================================== */
+
+.event-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
+  background: #fffaf3;
+  border: 1px solid rgba(201, 164, 107, 0.75);
+
+  box-shadow: 0 12px 35px rgba(63, 26, 32, 0.07);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(63, 26, 32, 0.13);
+}
+
+.event-card-inner {
+  position: relative;
+  min-height: 340px;
+  height: 100%;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(201, 164, 107, 0.4);
+  text-align: center;
+}
+
+/* =====================================
+   TOP ORNAMENT
+===================================== */
+
+.event-card-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto 20px;
+  color: #c9a46b;
+}
+
+.event-card-ornament span {
+  width: 35px;
+  height: 1px;
+  background: #c9a46b;
+}
+
+/* =====================================
+   EVENT NUMBER
+===================================== */
+
+.event-number {
+  width: 100%;
+  color: rgba(201, 164, 107, 0.55);
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+
+.event-card-kicker {
+  width: 100%;
+  margin: 12px 0 0;
+  color: #a47b4d;
+  font-family: Georgia, serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* =====================================
+   EVENT NAME
+===================================== */
+
+.event-card h3 {
+  width: 100%;
+  margin: 15px 0 0;
+  color: #5b0b20;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(35px, 4vw, 47px);
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+}
+
+/* =====================================
+   DIVIDER
+===================================== */
+
+.event-divider {
+  width: min(100%, 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px auto;
+  color: #c9a46b;
+}
+
+.event-divider span {
+  flex: 1;
+  height: 1px;
+  background: rgba(201, 164, 107, 0.65);
+}
+
+.event-divider i {
+  font-size: 11px;
+  font-style: normal;
+}
+
+/* =====================================
+   EVENT DATE AND TIME
+===================================== */
+
+.event-detail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 7px 0;
+  color: #947047;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.event-detail svg {
+  flex-shrink: 0;
+  color: #b28b58;
+}
+
+/* =====================================
+   EVENT DESCRIPTION
+===================================== */
+
+.event-description {
+  width: 100%;
+  max-width: 280px;
+  margin: 18px auto 0;
+  color: #79656a;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* =====================================
+   BOTTOM DECORATION
+===================================== */
+
+.event-card-bottom {
+  width: 100%;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(201, 164, 107, 0.3);
+  text-align: center;
+}
+
+.event-card-bottom span {
+  display: block;
+  color: #b28b58;
+  font-family: Georgia, serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+  .events-shell {
+    width: min(100% - 36px, 700px);
+  }
+
+  .event-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 320px));
+    justify-content: center;
+    gap: 22px;
+    margin-top: 45px;
+  }
+
+  .event-card-inner {
+    min-height: 330px;
+  }
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 540px) {
+  .events-section {
+    padding: 65px 0;
+  }
+
+  .events-shell {
+    width: calc(100% - 30px);
+  }
+
+  .events-section .section-heading {
+    font-size: 58px;
+  }
+
+  .events-section .section-copy {
+    font-size: 13px;
+  }
+  .event-grid {
+    grid-template-columns: minmax(0, 370px);
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+    margin-top: 38px;
+  }
+
+  .event-card {
+    width: 100%;
+  }
+
+  .event-card-inner {
+    min-height: 320px;
+    padding: 30px 18px;
+  }
+
+  .event-card h3 {
+    font-size: 43px;
+  }
+
+  .event-number {
+    font-size: 36px;
+  }
+
+  .event-detail {
+    font-size: 12px;
+  }
+
+  .event-description {
+    font-size: 12px;
+  }
+}
+
+/* =====================================
+   REDUCED MOTION
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .event-card {
+    transition: none;
+  }
+
+  .event-card:hover {
+    transform: none;
+  }
+}

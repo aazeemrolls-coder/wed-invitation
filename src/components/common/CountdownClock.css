@@ -1,0 +1,270 @@
+/* =====================================
+   COUNTDOWN CLOCK
+===================================== */
+
+.countdown-clock {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+  align-items: stretch;
+  gap: clamp(10px, 2.5vw, 22px);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Individual boxes */
+
+.countdown-unit {
+  min-width: 0;
+  padding: 8px;
+  background: #fffaf3;
+  border: 1px solid rgba(201, 164, 107, 0.8);
+  box-shadow: 0 8px 22px rgba(63, 26, 32, 0.06);
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.countdown-unit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(63, 26, 32, 0.1);
+}
+
+.countdown-unit-inner {
+  min-height: 115px;
+  padding: 18px 5px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid rgba(201, 164, 107, 0.35);
+}
+
+/* Countdown number */
+
+.countdown-value {
+  display: block;
+  color: #5b0b20;
+  font-family: Georgia, serif;
+  font-size: clamp(35px, 5vw, 52px);
+  font-weight: 400;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Countdown label */
+
+.countdown-unit-label {
+  color: #a47b4d;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* =====================================
+   EXPIRED MESSAGE
+===================================== */
+
+.countdown-expired {
+  width: 100%;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.countdown-expired > span {
+  color: #c9a46b;
+  font-size: 30px;
+}
+
+.countdown-expired h3 {
+  margin: 12px 0;
+  color: #5b0b20;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(35px, 6vw, 55px);
+  font-weight: 400;
+}
+
+.countdown-expired p {
+  color: #79656a;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 768px) {
+  .countdown-clock {
+    max-width: 560px;
+    gap: 12px;
+  }
+
+  .countdown-unit-inner {
+    min-height: 100px;
+  }
+}
+
+/* =====================================
+   MOBILE COUNTDOWN - SINGLE ROW
+===================================== */
+
+@media (max-width: 480px) {
+  .countdown-section {
+    padding: 45px 0;
+  }
+
+  .countdown-shell {
+    width: calc(100% - 24px);
+  }
+
+  .countdown-section .section-heading {
+    font-size: clamp(40px, 10.5vw, 49px);
+    line-height: 1.05;
+  }
+
+  .countdown-section .section-copy {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .countdown-card {
+    width: 100%;
+    margin-top: 28px;
+    padding: 6px;
+  }
+
+  .countdown-card-inner {
+    padding: 28px 8px;
+  }
+
+  .countdown-kicker {
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  /* Force all four boxes into one row */
+  .countdown-clock {
+    width: 100%;
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .countdown-unit {
+    min-width: 0;
+    padding: 4px;
+  }
+
+  .countdown-unit-inner {
+    min-height: 75px;
+    padding: 9px 2px;
+    gap: 7px;
+  }
+
+  .countdown-value {
+    font-size: clamp(22px, 7vw, 31px);
+  }
+
+  .countdown-unit-label {
+    font-size: clamp(7px, 2vw, 9px);
+    letter-spacing: 0.5px;
+  }
+
+  .countdown-divider {
+    margin-top: 24px;
+  }
+
+  .countdown-message {
+    margin-top: 16px;
+    font-size: 12px;
+  }
+
+  .countdown-couple {
+    font-size: 34px;
+    gap: 5px;
+  }
+
+  .countdown-date {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .countdown-bottom-ornament {
+    margin-top: 18px;
+  }
+}
+
+/* Extra small phones */
+
+@media (max-width: 360px) {
+  .countdown-clock {
+    gap: 4px;
+  }
+
+  .countdown-unit {
+    padding: 3px;
+  }
+
+  .countdown-unit-inner {
+    min-height: 68px;
+  }
+
+  .countdown-value {
+    font-size: 23px;
+  }
+
+  .countdown-unit-label {
+    font-size: 7px;
+    letter-spacing: 0;
+  }
+}
+
+/* =====================================
+   MATCH COUNTDOWN CARD WIDTH TO VENUE
+===================================== */
+
+@media (max-width: 768px) {
+  .countdown-shell {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .countdown-section .countdown-card {
+    width: calc(100vw - 48px) !important;
+    max-width: 650px !important;
+    margin: 30px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .countdown-card-inner {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .countdown-clock {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+}
+
+@media (max-width: 380px) {
+  .countdown-section .countdown-card {
+    width: calc(100vw - 36px) !important;
+  }
+}

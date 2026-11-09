@@ -1,0 +1,4 @@
+@media (max-width: 640px) {
+  .section-shell { width: min(100% - 30px, 1100px); }
+  .section-pad { padding: 75px 0; }
+}

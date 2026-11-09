@@ -1,0 +1,181 @@
+.couple-section {
+  position: relative;
+  width: 100%;
+  padding: clamp(65px, 9vw, 120px) 0;
+  background: #f8f1e9;
+  overflow: hidden;
+  text-align: center;
+}
+
+.couple-shell {
+  width: min(100% - 40px, 1100px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Section heading */
+
+.couple-section .section-heading-wrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.couple-section .section-kicker {
+  text-align: center;
+  color: #947047;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.couple-section .section-heading {
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(55px, 8vw, 90px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #5b0b20;
+  text-align: center;
+}
+
+.couple-section .section-copy {
+  max-width: 600px;
+  margin: 15px auto 0;
+  text-align: center;
+  color: #78675d;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.couple-section .gold-rule {
+  margin: 15px auto;
+}
+
+/* Couple cards */
+
+.couple-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: center;
+  align-items: start;
+  gap: clamp(25px, 5vw, 65px);
+  margin: 55px auto 0;
+}
+
+.couple-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Portrait */
+
+.portrait-placeholder {
+  position: relative;
+  width: min(100%, 340px);
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #eadbc9;
+  border: 8px solid #fffaf4;
+  outline: 1px solid rgba(201, 164, 107, 0.55);
+  box-shadow: 0 12px 35px rgba(53, 24, 25, 0.12);
+}
+
+.portrait-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.couple-card:hover .portrait-placeholder img {
+  transform: scale(1.04);
+}
+
+/* Names */
+
+.couple-card h3 {
+  margin: 25px 0 8px;
+  color: #5b0b20;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(38px, 5vw, 55px);
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Parents */
+
+.couple-card p {
+  max-width: 350px;
+  margin: 0 auto;
+  color: #947047;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .couple-shell {
+    width: min(100% - 36px, 650px);
+  }
+
+  .couple-grid {
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .portrait-placeholder {
+    border-width: 6px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 540px) {
+  .couple-section {
+    padding: 65px 0;
+  }
+
+  .couple-shell {
+    width: calc(100% - 30px);
+  }
+
+  .couple-section .section-heading {
+    font-size: 60px;
+  }
+
+  .couple-section .section-copy {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .couple-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 35px;
+  }
+
+  .couple-card {
+    width: 100%;
+  }
+
+  .portrait-placeholder {
+    width: min(85%, 300px);
+  }
+
+  .couple-card h3 {
+    margin-top: 20px;
+    font-size: 45px;
+  }
+}

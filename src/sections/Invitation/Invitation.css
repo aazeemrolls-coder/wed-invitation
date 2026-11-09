@@ -1,0 +1,267 @@
+.invitation {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: clamp(70px, 10vw, 120px) 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(201, 164, 107, 0.12),
+      transparent 65%
+    ),
+    #f2e8dc;
+
+  text-align: center;
+}
+
+/* Main container */
+
+.invitation-shell {
+  width: min(100% - 40px, 1100px);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* Section heading */
+
+.invitation .section-heading-wrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.invitation .section-kicker {
+  text-align: center;
+}
+
+.invitation .section-heading {
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(55px, 8vw, 90px);
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  color: #5b0b20;
+}
+
+.invitation .section-copy {
+  max-width: 600px;
+  margin: 15px auto 0;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.invitation .gold-rule {
+  margin: 15px auto;
+}
+
+/* Invitation card */
+
+.invitation-paper {
+  position: relative;
+
+  width: min(100%, 680px);
+  margin: 55px auto 0;
+
+  padding: clamp(45px, 7vw, 75px) clamp(20px, 7vw, 65px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 1px solid #c9a46b;
+  outline: 1px solid rgba(201, 164, 107, 0.5);
+  outline-offset: 8px;
+
+  background: #fffaf3;
+
+  text-align: center;
+
+  box-shadow: 0 15px 45px rgba(63, 26, 32, 0.08);
+}
+
+/* Decorative corners */
+
+.invitation-paper::before,
+.invitation-paper::after {
+  content: "❧";
+  position: absolute;
+  color: #c9a46b;
+  font-size: 35px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.invitation-paper::before {
+  top: 12px;
+  left: 15px;
+  transform: rotate(-45deg);
+}
+
+.invitation-paper::after {
+  right: 15px;
+  bottom: 12px;
+  transform: rotate(135deg);
+}
+
+/* Top decoration */
+
+.invitation-flourish {
+  display: block;
+  margin: 0 0 25px;
+  color: #b28b58;
+  font-size: 38px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Invitation text */
+
+.invitation-paper p {
+  width: 100%;
+  margin: 0;
+  color: #79656a;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Bride and groom names */
+
+.invitation-paper h3 {
+  width: 100%;
+  margin: 22px 0;
+  color: #5b0b20;
+
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(48px, 7vw, 75px);
+  font-weight: 400;
+  line-height: 1.15;
+
+  text-align: center;
+}
+
+/* Ampersand */
+
+.invitation-ampersand {
+  display: block;
+  margin: 0;
+  color: #c9a46b;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+/* Wedding date */
+
+.invitation-paper strong {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+
+  color: #a47b4d;
+  font-family: Georgia, serif;
+  font-size: clamp(13px, 2vw, 17px);
+  font-weight: 400;
+
+  letter-spacing: clamp(2px, 1vw, 5px);
+  text-align: center;
+}
+
+/* Bottom decoration */
+
+.invitation-bottom-flourish {
+  margin-top: 25px !important;
+  color: #b28b58 !important;
+  font-size: 38px !important;
+  line-height: 1 !important;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .invitation {
+    padding: 75px 0;
+  }
+
+  .invitation-shell {
+    width: min(100% - 36px, 650px);
+  }
+
+  .invitation-paper {
+    width: min(100%, 580px);
+    margin-top: 45px;
+  }
+
+  .invitation-paper p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .invitation {
+    padding: 65px 0;
+  }
+
+  .invitation-shell {
+    width: calc(100% - 30px);
+  }
+
+  .invitation .section-heading {
+    font-size: 58px;
+  }
+
+  .invitation .section-copy {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .invitation-paper {
+    width: calc(100% - 12px);
+    margin-top: 38px;
+    padding: 45px 18px;
+    outline-offset: 5px;
+  }
+
+  .invitation-paper::before,
+  .invitation-paper::after {
+    font-size: 25px;
+  }
+
+  .invitation-flourish,
+  .invitation-bottom-flourish {
+    font-size: 30px !important;
+  }
+
+  .invitation-paper h3 {
+    margin: 18px 0;
+    font-size: clamp(42px, 12vw, 55px);
+  }
+
+  .invitation-ampersand {
+    font-size: 23px;
+  }
+
+  .invitation-paper p {
+    font-size: 13px;
+  }
+
+  .invitation-paper strong {
+    margin-top: 22px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}

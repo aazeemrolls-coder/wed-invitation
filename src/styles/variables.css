@@ -1,0 +1,14 @@
+:root {
+  --wine: #5b0b20;
+  --wine-dark: #21050e;
+  --wine-deep: #16030a;
+  --cream: #f7efe5;
+  --cream-dark: #eadbc9;
+  --gold: #c9a46b;
+  --gold-light: #f0d6a9;
+  --ink: #351821;
+  --muted: #876d6d;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --script: 'Great Vibes', cursive;
+  --sans: 'Montserrat', Arial, sans-serif;
+}

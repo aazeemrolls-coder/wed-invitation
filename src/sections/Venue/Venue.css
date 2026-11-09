@@ -1,0 +1,463 @@
+/* Section-specific styling is in src/styles/sections.css. */
+
+/* =====================================
+   VENUE SECTION
+===================================== */
+
+.venue-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: clamp(75px, 10vw, 125px) 0;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(201, 164, 107, 0.13),
+      transparent 60%
+    ),
+    #f8f1e9;
+
+  text-align: center;
+}
+
+.venue-shell {
+  width: min(100% - 40px, 1100px);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* =====================================
+   SECTION HEADING
+===================================== */
+
+.venue-section .section-heading-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.venue-section .section-kicker {
+  width: 100%;
+  text-align: center;
+  color: #947047;
+}
+
+.venue-section .section-heading {
+  width: 100%;
+  color: #5b0b20;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(55px, 8vw, 90px);
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.venue-section .section-copy {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px auto 0;
+  color: #79656a;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.venue-section .gold-rule {
+  margin: 15px auto;
+}
+
+/* =====================================
+   VENUE CARD
+===================================== */
+
+.venue-card {
+  width: min(100%, 750px);
+  margin: 55px auto 0;
+  padding: 12px;
+  box-sizing: border-box;
+
+  background: #fffaf3;
+  border: 1px solid rgba(201, 164, 107, 0.8);
+
+  box-shadow: 0 18px 50px rgba(63, 26, 32, 0.09);
+}
+
+.venue-card-inner {
+  width: 100%;
+  padding: 35px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid rgba(201, 164, 107, 0.4);
+  text-align: center;
+}
+
+/* =====================================
+   ORNAMENT
+===================================== */
+
+.venue-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  margin-bottom: 28px;
+  color: #c9a46b;
+}
+
+.venue-ornament span {
+  width: 55px;
+  height: 1px;
+  background: #c9a46b;
+}
+
+/* =====================================
+   VENUE ARTWORK
+===================================== */
+
+.venue-art {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(ellipse at center, rgba(128, 49, 65, 0.5), transparent 65%),
+    linear-gradient(135deg, #21050e, #5b0b20 50%, #310817);
+}
+
+/* Decorative background texture */
+
+.venue-art-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 30px,
+      rgba(255, 255, 255, 0.025) 31px,
+      transparent 32px
+    ),
+    radial-gradient(circle at center, transparent 20%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+/* Artwork content */
+
+.venue-art-content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 25px;
+  color: #e9c99a;
+  text-align: center;
+}
+
+.venue-art-content svg {
+  margin-bottom: 20px;
+  color: #d9b77e;
+}
+
+.venue-art-content p {
+  margin: 0;
+  color: #e9c99a;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.venue-art-content h3 {
+  margin: 12px 0;
+  color: #fff0e5;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(45px, 8vw, 70px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.venue-art-content span {
+  color: #e9c99a;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+/* Artwork corners */
+
+.venue-art-corner {
+  position: absolute;
+  z-index: 1;
+  color: #d9b77e;
+  font-size: 25px;
+}
+
+.venue-art-corner--top {
+  top: 15px;
+  left: 18px;
+}
+
+.venue-art-corner--bottom {
+  right: 18px;
+  bottom: 15px;
+}
+
+/* =====================================
+   VENUE INFORMATION
+===================================== */
+
+.venue-information {
+  width: 100%;
+  margin-top: 38px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.venue-information-kicker {
+  margin: 0;
+  color: #a47b4d;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.venue-information h3 {
+  margin: 12px 0;
+  color: #5b0b20;
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(45px, 7vw, 65px);
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* Address */
+
+.venue-address {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  color: #947047;
+  text-align: center;
+}
+
+.venue-address svg {
+  flex-shrink: 0;
+  color: #b28b58;
+}
+
+.venue-address p {
+  margin: 0;
+  color: #79656a;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Wedding date */
+
+.venue-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  margin-top: 25px;
+  color: #947047;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.venue-time i {
+  color: #c9a46b;
+  font-style: normal;
+}
+
+/* Directions button */
+
+.venue-directions-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 30px;
+  padding: 15px 27px;
+
+  background: #5b0b20;
+  border: 1px solid #5b0b20;
+
+  color: #fffaf3;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.venue-directions-button:hover {
+  background: #c9a46b;
+  border-color: #c9a46b;
+  color: #21050e;
+  transform: translateY(-3px);
+}
+
+.venue-directions-button span {
+  margin-left: 3px;
+}
+
+/* Bottom ornament */
+
+.venue-bottom-ornament {
+  width: min(100%, 180px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-top: 35px;
+  color: #c9a46b;
+}
+
+.venue-bottom-ornament span {
+  flex: 1;
+  height: 1px;
+  background: rgba(201, 164, 107, 0.6);
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 768px) {
+  .venue-section {
+    padding: 75px 0;
+  }
+
+  .venue-shell {
+    width: min(100% - 36px, 650px);
+  }
+
+  .venue-card {
+    margin-top: 45px;
+  }
+
+  .venue-card-inner {
+    padding: 25px;
+  }
+
+  .venue-art {
+    min-height: 260px;
+  }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+  .venue-section {
+    padding: 65px 0;
+  }
+
+  .venue-shell {
+    width: calc(100% - 30px);
+  }
+
+  .venue-section .section-heading {
+    font-size: 58px;
+  }
+
+  .venue-section .section-copy {
+    font-size: 13px;
+  }
+
+  .venue-card {
+    width: calc(100% - 12px);
+    margin-top: 38px;
+    padding: 8px;
+  }
+
+  .venue-card-inner {
+    padding: 20px 12px;
+  }
+
+  .venue-art {
+    min-height: 230px;
+  }
+
+  .venue-art-content h3 {
+    font-size: 48px;
+  }
+
+  .venue-art-content p {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .venue-art-content span {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .venue-information {
+    margin-top: 28px;
+  }
+
+  .venue-information h3 {
+    font-size: 48px;
+  }
+
+  .venue-address p {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  .venue-time {
+    gap: 9px;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .venue-directions-button {
+    width: min(100%, 260px);
+    padding: 14px 15px;
+    font-size: 11px;
+  }
+}

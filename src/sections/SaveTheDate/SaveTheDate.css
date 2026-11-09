@@ -1,0 +1,419 @@
+/* Section-specific styling is in src/styles/sections.css. */
+
+.savethedate {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: clamp(70px, 10vw, 120px) 0;
+  background:
+    radial-gradient(
+      circle at 50% 55%,
+      rgba(201, 164, 107, 0.14),
+      transparent 55%
+    ),
+    #f8f1e9;
+  text-align: center;
+}
+
+.savethedate-shell {
+  width: min(100% - 40px, 1100px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Section heading */
+
+.savethedate .section-heading-wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.savethedate .section-kicker {
+  text-align: center;
+}
+
+.savethedate .section-heading {
+  font-family: "Alex Brush", cursive;
+  font-size: clamp(55px, 8vw, 90px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #5b0b20;
+  text-align: center;
+}
+
+.savethedate .section-copy {
+  max-width: 600px;
+  margin: 15px auto 0;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.savethedate .gold-rule {
+  margin: 15px auto;
+}
+
+/* Date card */
+
+.date-card {
+  position: relative;
+  width: min(100%, 520px);
+  margin: 55px auto 0;
+  padding: 12px;
+  box-sizing: border-box;
+
+  background: #fffaf3;
+  border: 1px solid rgba(201, 164, 107, 0.75);
+
+  box-shadow:
+    0 20px 55px rgba(63, 26, 32, 0.09),
+    0 5px 15px rgba(63, 26, 32, 0.04);
+}
+
+.date-card-inner {
+  position: relative;
+  min-height: 520px;
+  padding: 55px 35px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(201, 164, 107, 0.45);
+  text-align: center;
+}
+
+/* Decorations */
+
+.date-decoration {
+  color: #c9a46b;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.date-decoration-top {
+  margin-bottom: 25px;
+}
+
+.date-decoration-bottom {
+  margin-top: 28px;
+}
+
+/* Card heading */
+
+.date-card-kicker {
+  margin: 0;
+  color: #947047;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.date-heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 15px;
+  color: #a47b4d;
+}
+
+/* Month */
+
+.date-month {
+  color: #5b0b20;
+  font-family: "Alex Brush", cursive;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+/* Date number */
+
+.date-number-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin: 5px 0;
+}
+
+.date-number {
+  color: #5b0b20;
+  font-family: Georgia, serif;
+  font-size: clamp(100px, 15vw, 145px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.date-side-line {
+  width: 45px;
+  height: 1px;
+  background: #c9a46b;
+}
+
+/* Weekday and year */
+
+.date-weekday {
+  margin-top: 10px;
+  color: #947047;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+/* Divider */
+
+.date-divider {
+  width: min(100%, 220px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0 22px;
+}
+
+.date-divider span {
+  flex: 1;
+  height: 1px;
+  background: rgba(201, 164, 107, 0.7);
+}
+
+.date-divider i {
+  color: #c9a46b;
+  font-size: 13px;
+  font-style: normal;
+}
+
+/* Message */
+
+.date-card-message {
+  margin: 0;
+  color: #79656a;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.date-card-venue {
+  margin: 18px 0 0;
+  color: #5b0b20;
+  font-family: "Alex Brush", cursive;
+  font-size: 35px;
+}
+
+.date-card-address {
+  max-width: 350px;
+  margin: 5px auto 0;
+  color: #947047;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+/* Google Calendar button */
+
+.date-calendar-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 28px;
+  padding: 14px 23px;
+
+  background: #5b0b20;
+  border: 1px solid #5b0b20;
+
+  color: #fffaf3;
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+.date-calendar-button:hover {
+  background: #c9a46b;
+  border-color: #c9a46b;
+  color: #21050e;
+  transform: translateY(-3px);
+}
+
+.date-calendar-button span {
+  margin-left: 3px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .savethedate {
+    padding: 75px 0;
+  }
+
+  .savethedate-shell {
+    width: min(100% - 36px, 650px);
+  }
+
+  .date-card {
+    width: min(100%, 480px);
+    margin-top: 45px;
+  }
+}
+
+/* =====================================
+   IMPROVED MOBILE SAVE THE DATE
+===================================== */
+
+@media (max-width: 480px) {
+  .savethedate {
+    padding: 50px 0;
+  }
+
+  .savethedate-shell {
+    width: calc(100% - 28px);
+  }
+
+  /* Heading */
+  .savethedate .section-heading {
+    font-size: 52px;
+    line-height: 1.05;
+  }
+
+  .savethedate .section-copy {
+    max-width: 310px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  /* Date card */
+  .date-card {
+    width: 100%;
+    margin-top: 30px;
+    padding: 7px;
+  }
+
+  .date-card-inner {
+    min-height: auto;
+    padding: 30px 14px;
+  }
+
+  .date-decoration-top {
+    margin-bottom: 18px;
+    font-size: 25px;
+  }
+
+  .date-card-kicker {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .date-heart {
+    margin: 15px 0 10px;
+  }
+
+  .date-month {
+    font-size: 40px;
+  }
+
+  .date-number-wrapper {
+    gap: 12px;
+    margin: 0;
+  }
+
+  .date-number {
+    font-size: clamp(90px, 25vw, 110px);
+    line-height: 1;
+  }
+
+  .date-side-line {
+    width: 25px;
+  }
+
+  .date-weekday {
+    margin-top: 8px;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+  }
+
+  .date-divider {
+    margin: 22px auto 16px;
+  }
+
+  .date-card-message {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .date-card-venue {
+    margin-top: 14px;
+    font-size: 30px;
+  }
+
+  .date-card-address {
+    max-width: 280px;
+    font-size: 9px;
+    line-height: 1.6;
+  }
+
+  /* Calendar button */
+  .date-calendar-button {
+    width: min(100%, 270px);
+    min-height: 48px;
+    box-sizing: border-box;
+    margin-top: 22px;
+    padding: 12px 10px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .date-decoration-bottom {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+/* =====================================
+   MATCH SAVE THE DATE WIDTH TO VENUE
+===================================== */
+
+@media (max-width: 768px) {
+  .savethedate-shell {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .savethedate .date-card {
+    display: block;
+
+    /* Match the Venue card's mobile width */
+    width: calc(100vw - 48px) !important;
+    max-width: 650px !important;
+
+    margin: 30px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .savethedate .date-card-inner {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 380px) {
+  .savethedate .date-card {
+    width: calc(100vw - 36px) !important;
+  }
+}
