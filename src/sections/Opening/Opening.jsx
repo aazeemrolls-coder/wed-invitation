@@ -332,7 +332,7 @@ export default function Opening() {
 
           <p className="opening__address">{weddingData.wedding.address}</p>
 
-          <a className="opening__continue" href="#hero">
+          <a className="opening__continue" href="#couple">
             Begin the celebration <span>↓</span>
           </a>
         </div>

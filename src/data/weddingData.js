@@ -22,7 +22,7 @@ const weddingData = {
     phone: "+91 9634003802, 7065379225",
     email: "abdulazeem@gmail.com",
   },
-  musicSrc: "/assets/music/wedding.mp3",
+  musicSrc: "/assets/music/leberch-wedding-584479.mp3",
   theme: {
     primary: "#5b0b20",
     deep: "#21050e",
