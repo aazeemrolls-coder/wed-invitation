@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react';
 import { Music2, VolumeX } from 'lucide-react';
 import weddingData from '../../data/weddingData.js';
+import "./MusicPlayer.css"
+
 
 export default function MusicPlayer() {
   const audioRef = useRef(null);

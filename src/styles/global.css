@@ -86,7 +86,6 @@ section {
   padding: 105px 0;
 }
 
-@import "./sections.css";
 
 * {
   box-sizing: border-box;
