@@ -63,7 +63,7 @@ export default function Venue() {
                 </div>
 
                 <div className="venue-time">
-                  <span>WEDDING DAY</span>
+                  <span></span>MONDAY
                   <i>✦</i>
                   <span>{weddingData.wedding.displayDate}</span>
                 </div>
