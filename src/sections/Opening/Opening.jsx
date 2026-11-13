@@ -180,6 +180,10 @@ export default function Opening({ onReveal }) {
             {weddingData.wedding.displayDate}
           </p>
 
+          <p className="opening__time">
+            LUNCH: {weddingData.wedding.time || "12:30 PM"}
+          </p>
+
           <p className="opening__venue">
             {weddingData.wedding.venue}
           </p>

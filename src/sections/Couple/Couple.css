@@ -162,8 +162,8 @@
 
   .couple-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
-    margin-top: 35px;
+  gap: 40px;
+  margin-top: 35px;
   }
 
   .couple-card {

@@ -1,4 +1,4 @@
-/* Section-specific styling is in src/styles/sections.css. */
+venue/* Section-specific styling is in src/styles/sections.css. */
 
 /* =====================================
    VENUE SECTION
@@ -19,6 +19,10 @@
     #f8f1e9;
 
   text-align: center;
+}
+
+.section-pad {
+  padding: 50px 0 105px 0 !important;
 }
 
 .venue-shell {
@@ -451,7 +455,7 @@
 
   .venue-time {
     gap: 9px;
-    font-size: 9px;
+    font-size: 14px;
     letter-spacing: 1px;
   }
 

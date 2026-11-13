@@ -1,4 +1,5 @@
 import "./SectionHeading.css";
+
 export default function SectionHeading({
   kicker,
   title,

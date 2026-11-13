@@ -12,8 +12,9 @@ const weddingData = {
   wedding: {
     date: "2026-12-07T18:00:00",
     displayDate: "07 December 2026",
+    time: "12:30 PM",
     venue: "Royal Farm",
-    address: "NEAR CHAR CHIRAG, BAGOWALI BYPASS, MUZAFFARNAGAR",
+    address: "NEAR CHAR CHIRAG, BAGHONWALI BYPASS, MUZAFFARNAGAR",
     mapUrl: "https://maps.app.goo.gl/1TMbfApkBLY1Duvk8",
     startTime: "12:30 PM onwards",
   },

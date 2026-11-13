@@ -49,6 +49,7 @@ section {
   color: var(--wine);
   font: 400 clamp(2.8rem, 7vw, 5.2rem)/0.98 var(--script);
 }
+
 .section-copy {
   max-width: 600px;
   margin: 18px auto 0;
@@ -82,6 +83,7 @@ section {
   color: var(--wine-dark);
   transform: translateY(-2px);
 }
+
 .section-pad {
   padding: 105px 0;
 }

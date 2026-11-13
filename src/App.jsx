@@ -81,7 +81,7 @@ function App() {
 
       {revealed && (
         <>
-          <Couple />
+          {/* <Couple /> */}
           <Invitation />
           <SaveTheDate />
           <Venue />

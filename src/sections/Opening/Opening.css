@@ -346,6 +346,17 @@
   text-align: center;
 }
 
+/* Wedding Time */
+
+.opening__time {
+  margin: 8px 0 0;
+  color: #f5dfc0;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
 /* Venue */
 
 .opening__venue {
@@ -406,8 +417,9 @@
   }
 
   .opening__eyebrow {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 1.5px;
+    margin-bottom: 30px;
   }
 
   .opening__names h2 {
@@ -415,25 +427,32 @@
   }
 
   .opening__message {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .opening__date {
-    font-size: 13px;
+    margin-top: 35px;
+    font-size: 15px;
     letter-spacing: 3px;
   }
 
+  .opening__time {
+    font-size: 18px;
+    letter-spacing: 2.5px;
+  }  
+
   .opening__venue {
-    font-size: 16px;
+    margin-top: 15px;
+    font-size: 24px;
   }
 
   .opening__address {
-    font-size: 9px;
+    font-size: 11px;
     letter-spacing: 1px;
   }
 
   .opening__continue {
-    margin-top: 20px;
-    font-size: 10px;
+    margin-top: 30px;
+    font-size: 13px;
   }
 }

@@ -1,0 +1,103 @@
+/* ========================================
+   SECTION HEADING
+======================================== */
+
+.section-heading-wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Small heading / kicker */
+
+.section-heading-wrap .section-kicker {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+/* Main script heading */
+
+.section-heading-wrap .section-heading {
+  margin: 0;
+  color: var(--wine);
+  font-family: var(--script);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Decorative gold line */
+
+.section-heading-wrap .gold-rule {
+  display: block;
+  width: 58px;
+  height: 1px;
+  margin: 22px auto;
+  background: var(--gold);
+}
+
+/* Description */
+
+.section-heading-wrap .section-copy {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* ========================================
+   LIGHT VERSION
+   For dark backgrounds
+======================================== */
+
+.section-heading-wrap.is-light .section-kicker {
+  color: var(--gold);
+}
+
+.section-heading-wrap.is-light .section-heading {
+  color: var(--cream);
+}
+
+.section-heading-wrap.is-light .section-copy {
+  color: rgba(255, 250, 244, 0.8);
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 540px) {
+  .section-heading-wrap {
+    max-width: 100%;
+  }
+
+  .section-heading-wrap .section-kicker {
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+  }
+
+  .section-heading-wrap .section-heading {
+    font-size: clamp(3.2rem, 15vw, 4.5rem);
+  }
+
+  .section-heading-wrap .gold-rule {
+    width: 48px;
+    margin: 18px auto;
+  }
+
+  .section-heading-wrap .section-copy {
+    max-width: 100%;
+    padding: 0 5px;
+    font-size: 1.05rem !important;
+    line-height: 1.65;
+  }
+}

@@ -12,7 +12,7 @@ export default function Venue() {
           <SectionHeading
             kicker="We saved you a seat"
             title="The Venue"
-            description="A beautiful place, a special day and the people we love. We cannot wait to welcome you."
+            description="A beautiful place, a special day and the people we love. We can't wait to welcome you."
           />
         </Reveal>
 
@@ -66,6 +66,11 @@ export default function Venue() {
                   <span>WEDDING DAY</span>
                   <i>✦</i>
                   <span>{weddingData.wedding.displayDate}</span>
+                </div>
+
+                 <div className="venue-time">
+                  <span>LUNCH:</span>
+                  <span>{weddingData.wedding.time}</span>
                 </div>
 
                 <a
